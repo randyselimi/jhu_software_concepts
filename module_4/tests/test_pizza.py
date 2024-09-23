@@ -31,6 +31,7 @@ def test_pizza_init_simple(example_pizza_simple):
     assert newPizza.sauce == ["marinara"]
     assert newPizza.cheese == "mozzarella"
     assert newPizza.toppings == ["pepperoni"]
+    assert newPizza.cost() != 0
 
 def test_pizza_init_complex(example_pizza_complex):
     newPizza = example_pizza_complex
@@ -38,6 +39,7 @@ def test_pizza_init_complex(example_pizza_complex):
     assert newPizza.sauce == ["marinara", "pesto"]
     assert newPizza.cheese == "mozzarella"
     assert newPizza.toppings == ["pineapple", "mushrooms"]
+    assert newPizza.cost() != 0
 
 def test_pizza_str_simple(example_pizza_simple):
     assert str(example_pizza_simple) == """Crust: thin, Sauce: ['marinara'], Cheese: mozzarella, Toppings: ['pepperoni'], Cost: 9"""

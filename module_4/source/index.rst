@@ -5,7 +5,9 @@
 
 Welcome to module_4's documentation!
 ====================================
-
+.. automodule:: add
+   :members:
+   
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
