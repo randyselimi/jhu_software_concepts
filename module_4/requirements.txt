@@ -1,4 +1,3 @@
-Python 3.10+
-Pip
-Venv
-Flask
+pip
+venv
+sphinx_rtd_theme
