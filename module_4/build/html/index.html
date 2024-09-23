@@ -45,9 +45,8 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Welcome to module_4’s documentation!</a><ul>
-<li><a class="reference internal" href="#order.Order"><code class="docutils literal notranslate"><span class="pre">Order</span></code></a><ul>
-<li><a class="reference internal" href="#order.Order.input_pizza"><code class="docutils literal notranslate"><span class="pre">Order.input_pizza()</span></code></a></li>
-<li><a class="reference internal" href="#order.Order.order_paid"><code class="docutils literal notranslate"><span class="pre">Order.order_paid()</span></code></a></li>
+<li><a class="reference internal" href="#source.pizza.Pizza"><code class="docutils literal notranslate"><span class="pre">Pizza</span></code></a><ul>
+<li><a class="reference internal" href="#source.pizza.Pizza.cost"><code class="docutils literal notranslate"><span class="pre">Pizza.cost()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -79,43 +78,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-order">
-<span id="welcome-to-module-4-s-documentation"></span><h1>Welcome to module_4’s documentation!<a class="headerlink" href="#module-order" title="Link to this heading"></a></h1>
+  <section id="module-source.pizza">
+<span id="welcome-to-module-4-s-documentation"></span><h1>Welcome to module_4’s documentation!<a class="headerlink" href="#module-source.pizza" title="Link to this heading"></a></h1>
 <dl class="py class">
-<dt class="sig sig-object py" id="order.Order">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">order.</span></span><span class="sig-name descname"><span class="pre">Order</span></span><a class="headerlink" href="#order.Order" title="Link to this definition"></a></dt>
-<dd><p>An order of pizzas. Has a cost and can be paid.</p>
+<dt class="sig sig-object py" id="source.pizza.Pizza">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">source.pizza.</span></span><span class="sig-name descname"><span class="pre">Pizza</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crust</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sauce</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cheese</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toppings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#source.pizza.Pizza" title="Link to this definition"></a></dt>
+<dd><p>A pizza which can has a configurable crust, sauce, cheese, and toppings. Belong to an order and has a variable cost.</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="order.Order.input_pizza">
-<span class="sig-name descname"><span class="pre">input_pizza</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">crust</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sauce</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cheese</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toppings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#order.Order.input_pizza" title="Link to this definition"></a></dt>
-<dd><p>Add a new pizza to the order and update cost.</p>
+<dt class="sig sig-object py" id="source.pizza.Pizza.cost">
+<span class="sig-name descname"><span class="pre">cost</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#source.pizza.Pizza.cost" title="Link to this definition"></a></dt>
+<dd><p>Return the cost of the pizza.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>self</strong> (<a class="reference internal" href="#order.Order" title="order.Order"><em>Order</em></a>) – The order.</p></li>
-<li><p><strong>crust</strong> (<em>str</em>) – Crust of the pizza.</p></li>
-<li><p><strong>sauce</strong> (<em>list</em><em> of </em><em>str</em>) – Sauce for the pizza.</p></li>
-<li><p><strong>cheese</strong> (<em>str</em>) – Cheese on the pizza.</p></li>
-<li><p><strong>toppings</strong> (<em>list</em><em> of </em><em>str</em>) – Toppings of pizza.</p></li>
-</ul>
+<dd class="field-odd"><p><strong>self</strong> (<a class="reference internal" href="#source.pizza.Pizza" title="source.pizza.Pizza"><em>Pizza</em></a>) – The pizza.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Cost of order after adding pizza.</p>
+<dd class="field-even"><p>Cost of pizza calculated from its options.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p>int</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="order.Order.order_paid">
-<span class="sig-name descname"><span class="pre">order_paid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#order.Order.order_paid" title="Link to this definition"></a></dt>
-<dd><p>Pay the order and set the order to paid.
-:param self: The order.
-:type self: Order
-:return: The status of the order after being paid.
-:rtype: str</p>
 </dd></dl>
 
 </dd></dl>
