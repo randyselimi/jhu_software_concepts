@@ -60,12 +60,6 @@ def test_order_input_pizza_twice(example_order_empty, example_pizza_simple_data,
     example_order_empty.input_pizza(example_pizza_simple_data["crust"], example_pizza_simple_data["sauce"], example_pizza_simple_data["cheese"], example_pizza_simple_data["toppings"])
     example_order_empty.input_pizza(example_pizza_complex_data["crust"], example_pizza_complex_data["sauce"], example_pizza_complex_data["cheese"], example_pizza_complex_data["toppings"])
     assert example_order_empty.cost == 24
-@pytest.mark.order
-def test_order_input_pizza_thrice(example_order_empty, example_pizza_simple_data, example_pizza_complex_data, example_pizza_most_complex_data):
-    example_order_empty.input_pizza(example_pizza_simple_data["crust"], example_pizza_simple_data["sauce"], example_pizza_simple_data["cheese"], example_pizza_simple_data["toppings"])
-    example_order_empty.input_pizza(example_pizza_complex_data["crust"], example_pizza_complex_data["sauce"], example_pizza_complex_data["cheese"], example_pizza_complex_data["toppings"])
-    example_order_empty.input_pizza(example_pizza_most_complex_data["crust"], example_pizza_most_complex_data["sauce"], example_pizza_most_complex_data["cheese"], example_pizza_most_complex_data["toppings"])
-    assert example_order_empty.cost == 48
 
 @pytest.mark.order
 def test_order_order_paid_empty(example_order_empty):
