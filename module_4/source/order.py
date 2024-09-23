@@ -1,4 +1,4 @@
-from source.pizza import Pizza
+from pizza import Pizza
 
 class Order:
     """
