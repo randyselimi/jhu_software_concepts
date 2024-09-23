@@ -1,7 +1,7 @@
 
 Welcome to module_4's documentation!
 ====================================
-.. automodule:: source.pizza
+.. automodule:: source
    :members:
 
 .. toctree::
