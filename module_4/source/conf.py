@@ -5,16 +5,18 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-import sphinx_rtd_theme
 
 project = 'module_4'
 copyright = '2024, Randy Selimi'
 author = 'Randy Selimi'
+import os
+import sys
+sys.path.insert(0, os.path.abspath(".."))
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx_rtd_theme']
+extensions = ['sphinx.ext.autodoc']
 
 templates_path = ['_templates']
 exclude_patterns = []
