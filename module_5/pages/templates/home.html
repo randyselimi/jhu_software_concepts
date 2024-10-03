@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grad School Cafe Data Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/generic.css') }}">
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between;">
+        <h1>Grad School Cafe Data Analysis</h1>
+    </div>
+    <main>
+        <div>
+            <h2>
+                How many entries do you have in your database who have applied for Fall 2024?
+            </h2>
+            <p>
+                {{query.count_entries_fall_2024}}
+            </p>
+        </div>
+        <div>
+            <h2>
+                What percentage of entries are from international students (not American or Other) (to two decimal places)?
+            </h2>
+            <p>
+                {{query.percentage_international_students_fall_2024}}                
+            </p>            
+        </div>
+        <div>
+            <h2>
+                What is the average GPA, GRE, GRE V, GRE AW of applicants who provide these metrics?
+            </h2>
+            <p>
+                {{query.average_metrics_fall_2024}}
+            </p>            
+        </div>
+        <div>
+            <h2>
+                What is the average GPA of American students in Fall 2024?
+            </h2>
+            <p>
+                {{query.average_gpa_american_fall_2024}}
+            </p>
+        </div>
+        <div>
+            <h2>
+                What percent of entries for Fall 2024 are Acceptances?
+            </h2>
+            <p>
+                {{query.percentage_acceptances_fall_2024}}
+            </p>            
+        </div>
+        <div>
+            <h2>
+                What is the average GPA of applicants who applied for Fall 2024 and are accepted?
+            </h2>
+            <p>
+                {{query.average_gpa_accepted_fall_2024}}
+            </p>            
+        </div>
+        <div>
+            <h2>
+                How many entries are from applicants who applied to JHU for a master's degree in Computer Science?
+            </h2>
+            <p>
+                {{query.count_cs_masters_fall_2024}}
+            </p>            
+        </div>
+    </main>
+</body>
+</html>

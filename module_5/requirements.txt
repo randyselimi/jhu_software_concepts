@@ -1,0 +1,5 @@
+# Python packages
+Flask==2.3.0          # Flask web framework
+psycopg[binary]==3.1.9  # PostgreSQL adapter, including binary dependencies for efficiency
+pylint==2.15.0        # Code linter
+pydeps==1.12.13       # Tool for visualizing dependencies
