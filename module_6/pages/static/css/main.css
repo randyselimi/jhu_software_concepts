@@ -1,0 +1,6 @@
+li > a {
+    color: rgb(13, 51, 92);
+}
+a.current {
+  color: #007bff;
+}

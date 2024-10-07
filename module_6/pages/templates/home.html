@@ -1,0 +1,20 @@
+{% extends 'header.html' %}
+{% block content %}
+<h2>Welcome!</h2>
+<div style="display: flex; gap: 30px;">
+  <p>My name is Randy Selimi (he/him). I am currently a senior consultant specializing in full-stack e-commerce development at RSM US. I graduated from the Ohio State University in 2022 and am currenlty pursuing my masters in AI at the John Hopkins University. I live in Towson, MD with my girlfriend, two cats, and dog. In my free-time, I'm an avid gamer and love to workout as well as read!</p>
+  <div style="display: flex; ">
+      <div>
+        <img src= "{{url_for('static', filename='meash.jpg')}}" style="width:250px;height:250px;"/>
+        <img src= "{{url_for('static', filename='meblair.jpg')}}" style="width:250px;height:250px;"/>
+        <img src= "{{url_for('static', filename='meblairash.jpg')}}" style="width:250px;height:250px;"/>
+      </div>
+      <div>
+        <img src= "{{url_for('static', filename='mejett.jpg')}}" style="width:250px;height:250px;"/>
+        <img src= "{{url_for('static', filename='mesage.jpg')}}" style="width:250px;height:250px;"/>
+      </div>
+  </div>
+</div>
+{% endblock content %}
+
+
